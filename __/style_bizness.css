@@ -1,0 +1,907 @@
+    /*------------------------------------------------------------BODY CSS(START)------------------------------------------------------------------- */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .page_width{
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    /*------------------------------------------------------------BODY CSS(END)------------------------------------------------------------------- */
+
+    /*------------------------------------------------------------HEADER SECTION(START)------------------------------------------------------------------- */
+    .header_logo_text{
+        font-size: 40px;
+        color: var(--primary_color);
+        position: relative;
+        font-family:'Open sans', Arial, sans-serif ;
+        font-weight: 800;
+    }
+    .nav_barr{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .navbar-dark{
+        background-color: #101315cb !important;
+    }
+    .navigation_bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header_logo_text span{
+        color: #459445;
+    }
+    .nav_items{
+        list-style-type: none;
+        display: flex;
+    }
+    .nav_items li a{
+        display: inline-block;
+        text-align: center;
+        padding: 33.92px 15px;
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family:'Open sans', Arial, sans-serif ;
+    }
+
+    .nav_dropdown{
+        display:none;
+        border: 1px solid transparent;
+        background-color: transparent;
+        padding: 5px 10px 0px 10px;
+        border-radius: 5px;
+    }
+    .nav_dropdown i{
+        color: white;
+        font-size: 24px;
+    }
+    .header_bar{
+        height: 100vh;
+        background-image: url(Assets/Images/hero_section.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+    }
+    .header_bar::before{
+        background-color: #6a768f;
+        content: '';
+        height: 100vh;
+        width: 100%;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 200;
+    }
+    .header_item{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 400;
+    }
+    .header_title{
+        font-size: 50px;
+        font-weight: 800;
+        font-family:'Open sans', Arial, sans-serif ;
+        text-align: center;
+        color: white;
+        border-bottom: 2px solid white;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+    .header_detail{
+        font-size: 20px;
+        font-weight: 400;
+        font-family:'Open sans', Arial, sans-serif ;
+        text-align: center;
+        margin: 5px 0px;
+        color: white;
+        text-transform: uppercase;
+    }
+    /*------------------------------------------------------------HEADER SECTION(END)------------------------------------------------------------------- */
+
+    /*------------------------------------------------------------DEFAULT BUTTON CSS(START)------------------------------------------------------------------- */
+    .default_button{
+        border: 1px solid white;
+        border-radius: 25px;
+        padding: 10px 35px;
+        background-color: #304D30;
+        font-size: 16px;
+        color: white;
+        font-weight: 400;
+        font-family:'Open sans', Arial, sans-serif ;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+    .default_button:hover{
+        background-color: white;
+        border: 1px solid #304D30;
+        border-radius: 25px;
+        color: #304D30;
+    }
+    .button_alignment{
+        display: flex;
+        justify-content: center;
+    }
+    /*------------------------------------------------------------DEFAULT BUTTON CSS(END)------------------------------------------------------------------- */
+
+    /*------------------------------------------------------------ABOUT SECTION(START)------------------------------------------------------------------- */
+    .about_section{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin: 50px 0px 50px;
+    }
+    .about_image{
+        width: 100%;
+    }
+    .about_img_section{
+        width: 50%;
+    }
+    .about_title{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family:'Open sans', Arial, sans-serif ;
+        color: #343d47;
+        font-weight: 700;
+    }
+    .about_type{
+        margin-top: 15px;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-family:'Open sans', Arial, sans-serif ;
+        font-weight: 700;
+        color: #304D30;
+    }
+    .about_detail{
+        margin-top: 15px;
+        font-size: 16px;
+        color: black;
+        font-family: 'open sans', Arial, sans-serif;
+        font-weight: 400;
+    }
+    .about_detail_section{
+        width: 50%;
+    }
+    /*------------------------------------------------------------ABOUT SECTION(END)------------------------------------------------------------------- */
+
+    /*------------------------------------------------------------SERVICE SECTION(START)------------------------------------------------------------------- */
+    .service_heading{
+        text-align: center;
+        padding: 50px 0px;
+    }
+    .service_heading_border{
+        width: 40px;
+        height: 5px;
+        background: #304D30;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+    .service_heading_title{
+        margin-bottom: 10px;
+    }
+    .service_heading_detail{
+        color: black;
+        font-weight: 400;
+    }
+    .service_section{
+        background-color: #f7f7f7;
+    }
+    .service_card1{
+        padding: 0px 20px;
+        box-sizing: border-box;
+    }
+    .service_card1:hover .service_card_icon{
+        background-color: white;
+        border: 5px solid #304D30 ;
+        color: #304D30;
+    }
+    .service_card_icon{
+        color: #554e4e;
+        border: 5px solid transparent;
+        background-color: #69cb6995;
+        border-radius: 100px;
+        font-size: 30px;
+        padding: 25px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        margin-bottom: 10px;
+    }
+    .service_card_title{
+        color: #343d47;
+        font-weight: 700;
+        text-align: center;
+        font-size: 18px;
+    }
+    .service_card_detail{
+        color: black;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: justify;
+        line-height: 24px;
+    }
+    .service_card_section{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        row-gap: 40px;
+    }
+    /*---------------------------------------------------------SERVICE SECTION(END)------------------------------------------------------------------- */
+
+    /*--------------------------------------------------------TEAM INTRO SECTION(START)------------------------------------------------------------------- */
+    .card_img{
+        width: 100%;
+        position: relative;
+        object-fit: cover;
+    }
+    .card_detail{
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .intro{
+        background-color: #f7f7f7;
+        padding: 50px 0px;
+    }
+    .team{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    }
+    .team_card{
+        background-color: white;
+    }
+    .card_name{
+        font-size: 18px;
+        font-family: 'open sans', Arial, sans-serif;
+        font-weight: 600;
+        color: #3f444a;
+        text-transform: uppercase;
+    }
+    .card_position{
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'open sans', Arial, sans-serif;
+        text-transform: uppercase;
+        color: #304D30;
+    }
+    .card_intro{
+        font-size: 16px;
+        color: black;
+        margin-top: 15px;
+        text-align: justify;
+    }
+    .card_img::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid white;
+        border-left: 200px solid transparent;
+        transition: all 0.2s ease-in-out;
+        z-index: 20;
+    }
+    .teamcard_icon{
+        font-weight: 1000;
+        font-size: 25px;
+        color: #304D30;
+        position: absolute;
+        right: 7%;
+        top: 0;
+        z-index: 30;
+    }
+    .team_card:hover{
+        box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.1), 0 6px 20px 5px rgba(0, 0, 0, 0.1);
+    }
+    .team_card:hover .card_img{
+        background-color:#6a768f;
+        color: #304D30;
+        position: relative;
+        z-index: 19;
+    }
+    /*--------------------------------------------------------TEAM INTRO SECTION(END)------------------------------------------------------------------- */
+
+    /*--------------------------------------------------------PACKAGE SECTION(START)------------------------------------------------------------------- */
+    .package_section{
+        width: 100%;
+        background-image: url(Assets/Images/purchase_section.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+        padding: 74px 0;
+    }
+    .package_section::before{
+        background-color: #6a768f;
+        height: 100%;
+        content: '';
+        width: 100%;
+        opacity: 0.8;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .package_heading{
+        position: relative;
+        z-index: 300;
+    }
+    .package_heading_title{
+        color: white;
+        margin-bottom: 15px;
+    }
+    .package_heading_detail{
+        color: white;
+        font-weight: 300;
+    }
+    .package_items{
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+    }
+    .package{
+        width: calc(33.33% - 30px);
+        background-color: white;
+        text-align: center;
+        box-sizing: border-box;
+        position: relative;;
+        align-self: center;
+        padding: 80px 0;
+    }
+    .package_detail{
+        list-style-type: none;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: 'open sans', Arial, sans-serif;
+        color: black;
+        text-transform: uppercase;
+    }
+    .package_detail li{
+        padding-bottom: 10px;
+    }
+    .purchase_button{
+        margin: 20px 0px;
+    }
+    .package_title{
+        font-size: 30px;
+        color: #304D30;
+        font-family: 'open sans', Arial, sans-serif;
+        font-weight: 900;
+        padding-top: 50px;
+        text-transform: uppercase;
+    }
+    .package_price{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 60px;
+        font-family: 'open sans', Arial, sans-serif;
+        color: black;
+        font-weight: 700;
+    }
+    .package_price_symbol{
+        font-size: 28px;
+        font-weight: normal;
+        color: #304D30;
+        vertical-align: super;
+    }
+    .package_middle{
+        align-self: auto;
+        background-color: #304D30;
+    }
+    .package_middle .package_title{
+        color: white;
+    }
+    .package_middle .package_detail{
+        color: black;
+    }
+    .package_middle .package_price .package_price_symbol{
+        color: white;
+    }
+    .package_section .package_detail li{
+        color: black;
+    }
+    .package_middle .package_detail li{
+        color: #f7f7f7;
+    }
+    .package_middle .package_price{
+        color: #f7f7f7;
+    }
+
+    /*--------------------------------------------------------PACKAGE SECTION(END)------------------------------------------------------------------- */
+
+    /*--------------------------------------------------------BLOG SECTION(STRAT)------------------------------------------------------------------- */
+    .blog_section_detail{ 
+        color:black;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .blog_section{
+        margin-bottom: 50px;
+    }
+    .blog_section_title{
+        padding-bottom: 15px;
+    }
+    .blog_img{
+        width: 100%;
+        height: 240px;
+        position: relative;
+        object-fit: cover;
+    }
+    /* .blog_card_detail::before{ 
+        content: '';
+        position: absolute;
+        top:-12%;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid #f7f7f7;
+        border-left: 200px solid transparent;
+        transition: all 0.2s ease-in-out;
+        z-index: 20;
+    }*/
+    .blog_title{
+        color:#3f444a ;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-family: 'open sans', Arial, sans-serif;
+
+    }
+    .blog_author{
+        margin-top: 10px;
+        color: black;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 0;
+        text-transform: uppercase;
+        font-family: 'open sans', Arial, sans-serif;
+    }
+    .author_name{
+        color:#304D30 ;
+    }
+    .blog_detail{
+        color: black;
+        font-size: 16px;
+        margin-top: 15px;
+        text-align: justify;
+    }
+    .blog_card{
+        background-color:#f7f7f7;
+    }
+    .blog_button{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    /*--------------------------------------------------------BLOG SECTION(END)------------------------------------------------------------------- */
+
+    /*--------------------------------------------------------CUSTOMER REVIEW(SWIPER) SECTION(START)------------------------------------------------------------------- */
+    .customer_review_section{
+        background-color: #f7f7f7;
+    }
+    .swiper {
+        width: 100%;
+        height: 340px;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #f7f7f7;
+        width: 375px;
+        height: 300px;
+    }
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper-pagination{
+        margin-bottom:20px;
+    }
+    .customer_review .review { 
+        padding: 30px;
+        text-align: justify;
+        font-size: 17px;
+        color: #5c6873;
+        background-color: #fff;
+        font-family: 'open sans', Arial, sans-serif;
+        position: relative;
+    }
+    .customer_review .review::before {
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-top: 30px solid #87ba43;
+        content:'';
+        position: absolute;
+        z-index:30;
+        bottom: -30px;
+        right: 60%;
+    }
+
+    /* .customer_review::before{ 
+        border: medium solid transparent;
+        content: '';
+        height: 0;
+        left: 60px;
+        position: absolute;
+        top: 100%;
+        width: 0;
+        border-width: 15px;
+        border-color: #304D30;
+    }*/
+    .customer_img_container{
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+    }
+    .customer_detail_container{
+        display: inline-block;
+    }
+    .customer_name{
+        font-family: 'open sans', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        color:#5c6873;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        text-align: start;
+    }
+    .customer_post{
+        font-family: 'open sans', Arial, sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        color: #304D30;
+        text-transform: uppercase;
+        margin-top: 5px;
+        text-align: start;
+    }
+    .customer_img{
+        border: 2px solid transparent;
+        border-radius: 100px;
+    }
+    .customer_info{
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+    .customer_review_section .swiper-pagination-bullet{
+        width: 3%;
+        height: 3px;
+        border-radius: 0;
+    }
+    .customer_review_section .swiper-pagination-bullet-active{
+        background-color: #87ba43;
+    }
+    /*--------------------------------------------------------CUSTOMER REVIEW(SWIPER) SECTION(END)------------------------------------------------------------------- */
+
+    /*--------------------------------------------------------FOOTER SECTION(STRAT)------------------------------------------------------------------- */
+    .footer{
+        background-color: #262c30;
+    }
+    .social_media_links{
+        padding: 50px;
+        padding-top: 70px;
+    }
+    .social_media_linklist{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+    }
+    .social_media a{
+        padding-left: 20px;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'open sans', Arial, sans-serif;
+    }
+    .social_media a{
+        color: white;
+    }
+
+    .social_media a:visited{
+        color: white;
+    }
+    .social_media a:hover{
+        color:#9deb9d95 ;
+    }
+    .copyrights p{
+        text-align: center;
+        color: white;
+        font-family: 'open sans', Arial, sans-serif;
+        padding-bottom: 50px;
+    }
+    .copyrights i{
+        font-size: 12px;
+    }
+    .copyrights .source_link{
+        padding: 0px 5px 0px 5px;
+        text-decoration: none;
+        color:white ;
+    }
+    .copyrights .source_link:visited{
+        color: white;
+    }
+    .copyrights .source_link:hover{
+        color:#93eb9395 ;
+    }
+
+    /*--------------------------------------------------------FOOTER SECTION(END)------------------------------------------------------------------- */
+
+    /*--------------------------------------------------------CONTROL BUTTON SECTION(START)------------------------------------------------------------------- */
+    .control_button{
+        background-color: #5dc35d95;
+        height: 50px;
+        width: 50px;
+        display:flex ;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 10%;
+        right: 0%;
+        z-index: 500;
+    }
+    .control_button a i{
+        color: white;
+        text-align: center;
+        font-weight: 800;
+    }
+
+
+
+    .h4{
+        font-size: 18px;
+    }
+    /*--------------------------------------------------------CONTROL BUTTON SECTION(END)------------------------------------------------------------------- */
+
+    /*------------------------------------------------------------MEDIA QUERIES(START)------------------------------------------------------------------- */
+    /* @media  only screen and (max-width:1024px) {
+        .about_image{
+            left: 0;
+        }
+        .about_detail_section{
+            width: 60%;
+        }
+        .about_title{
+            font-size: 26px;
+        }
+        .about_type{
+            font-size: 15px;
+        }
+        .about_detail{
+            font-size: 14px;
+        }
+        .service_card_section{
+            grid-template-columns: auto auto;
+            padding: 0rem 7rem 9rem 7rem;
+            column-gap: 10px;
+        }
+        .header_item{
+            width: 80%;
+        }
+        .header_title{
+            font-size: 44px;
+        }
+        .service_card_detail{
+            font-size: 14px;
+        }
+        .service_card_title{
+            font-size: 18px;
+        }
+        .card_img{
+            width: 250px;
+            height: 250px;
+        }
+        .card_detail{
+            padding: 26.4px;
+            width: 250px;
+        }
+        .package_items{
+            max-width: 934px;
+        }
+        .package_title{
+            font-size: 26.4px;
+        }
+        .package .default_button{
+            padding: 10px 25px;
+            font-size: 14px;
+        }
+    
+        .swiper-pagination{
+            margin-bottom: 5px;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .nav_items{
+            display: none;
+        }
+        .nav_dropdown{
+            display: inline-block;
+        }
+        .header_item{
+            width: 100%;
+        }
+        .header_title{
+            font-size: 40px;
+            padding-bottom: 5px;
+        }
+        .header_detail{
+            font-size: 16.96px;
+            padding: 10px 0px;
+        }
+        .header_button{
+            font-size: 14px;
+        }
+        .about_section{
+            flex-direction: column;
+            align-items: center;
+        }
+        .about_image{
+            left: 0;
+        }
+        .about_detail_section{
+            width: 70%;
+        }
+        .header_logo_text{
+            font-size: 25px;
+        }
+        .about_title{
+            font-size: 24px;
+        }
+        .service_heading{
+            width: 70%;
+        }
+        .service_card_section{
+            padding: 0px;
+            column-gap: 10px;
+        }
+        .service_card_title{
+            font-size: 18px;
+        }
+        .service_card_detail{
+            font-size: 13.5px;
+        }
+        .card_img{
+            width: 100%;
+            height: 345px;
+        }
+        .card_detail{
+            padding: 26.4px;
+            width: 345px;
+        }
+        .package{
+            width: 33.33%;
+        }
+
+        .package_title{
+            font-size: 21px;
+        }
+    }
+    @media only screen and (max-width:320px){
+        .service_card_section{
+            grid-template-columns: auto;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0px;
+        }
+        .service_heading{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 30px 15px 45px 15px;
+        }
+        .header_item{
+            width: 100%;
+        }
+        .header_title{
+            padding-bottom: 10px;
+            font-size: 24px;
+        }
+        .header_detail{
+            padding: 10px 10px 0px 10px;
+            font-size: 14px;
+        }
+        .service_card_title{
+            font-size: 18px;
+        }
+        .service_card_detail{
+            font-size: 14px;
+        }
+        .card_detail{
+            padding: 26.4px;
+            width: 270px;
+        }
+        .team{
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .team_card{
+            width: 100%;
+        }
+        .card_img{
+            width: 100%;
+        }
+        .package_items{
+            display: block;
+            max-width: 270px;
+        }
+        .package{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .package_title{
+            font-size: 24px;
+        }
+    } */
+
+    @media only screen and (max-width: 1199px){
+        .page_width{
+            width: 940px;
+        }
+        .service_card_section{
+            grid-template-columns: auto auto;
+            row-gap: 40px;
+        }
+    }
+    @media only screen and (max-width: 991px){
+        .page_width{
+            width: 720px;
+        }
+        .team{
+            grid-template-columns: auto auto;
+        }
+    }
+    @media only screen and (max-width: 768px){
+        .page_width{
+            width: 450px;
+        }
+        .nav_items{
+            display: none;
+        }
+        .nav_dropdown{
+            display: inline-block;
+        }
+        .about_img_section{
+            width: 100%;
+        }
+        .about_detail_section{
+            width: 100%;
+            text-align: center;
+        }
+        .about_section, .service_card_section, .team, .package_items {
+            display: block;
+        }
+        .service_card1{
+            margin-bottom: 25px;
+        }
+        .service_section{
+            padding-bottom: 30px;
+        }
+        .team_card{
+            margin-bottom: 30px;    
+        }
+        .package{
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
+    @media only screen and (max-width: 450px){
+        .page_width{
+            width: 300px;
+        }
+    }
+    /*------------------------------------------------------------MEDIA QUERIES(END)------------------------------------------------------------------- */
